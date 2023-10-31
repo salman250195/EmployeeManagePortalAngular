@@ -1,0 +1,39 @@
+<!-- <p>view-emp-details works!</p> -->
+<!-- <p>Employee Details {{ employeeId }}</p> -->
+
+
+
+<!-- <div *ngIf="employeeDetails">
+    <h4>Employee Details</h4>
+    <div>
+        <label><strong>Name: </strong></label> {{ employeeDetails.name }}
+    </div>
+    <div>
+        <label><strong>Email: </strong></label> {{ employeeDetails.email }}
+    </div>
+    <div>
+        <label><strong>Phone: </strong></label> {{ employeeDetails.phone }}
+    </div>
+</div> -->
+
+
+
+<div class="container-fluid page">
+    <div class="d-flex page__box p-3 mt-2">Employee Details</div>
+    <div class="page__content shadow p-3 position-relative">
+        <div class="page__content-data">
+            <div *ngIf="employeeDetails">
+                <h4>Employee Details</h4>
+                <div>
+                    <label><strong>Name: </strong></label> {{ employeeDetails.name }}
+                </div>
+                <div>
+                    <label><strong>Email: </strong></label> {{ employeeDetails.email }}
+                </div>
+                <div>
+                    <label><strong>Phone: </strong></label> {{ employeeDetails.phone }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

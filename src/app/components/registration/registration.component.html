@@ -1,0 +1,161 @@
+<!-- <div class="container register">
+    <div class="row">
+        <div class="col-md-3 register-left">
+            <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
+            <h3>Welcome</h3>
+            <p>You are 30 seconds away from earning your own money!</p>
+            <input type="submit" name="" value="Login" [routerLink]="['/login']" /><br />
+        </div>
+        <div class="col-md-9 register-right">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h3 class="register-heading">Apply as a Employee</h3>
+                    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                        <div class="row register-form">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" formControlName="firstName"
+                                    placeholder="First Name *"
+                                    [ngClass]="{ 'is-invalid': submitted && signUp.firstName.errors }">
+                                <div class="invalid-feedback" *ngIf="submitted && signUp.firstName.errors?.required">
+                                    firstName is required.
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" formControlName="lastName"
+                                    placeholder="Last Name *"
+                                    [ngClass]="{ 'is-invalid': submitted && signUp.lastName.errors }">
+                                <div class="invalid-feedback" *ngIf="submitted && signUp.lastName.errors?.required">
+                                    LastName is required.
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" formControlName="email" placeholder="Email *"
+                                    [ngClass]="{ 'is-invalid': submitted && signUp.email.errors }">
+                                    <div class="invalid-feedback" *ngIf="submitted && signUp.email.errors?.required">
+                                        Enter your email.
+                                    </div>
+                                    <div class="invalid-feedback" *ngIf="submitted && signUp.email.errors?.pattern">
+                                        Enter valid email.
+                                    </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" formControlName="password"
+                                    placeholder="Passward *" [ngClass]="{ 'is-invalid': submitted && signUp.password.errors }">
+                                    <div class="invalid-feedback" *ngIf="submitted && signUp.password.errors?.required">
+                                        Enter your password.
+                                    </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" formControlName="phone" placeholder="Phone *"
+                                    [ngClass]="{ 'is-invalid': submitted && signUp.phone.errors}">
+                                    <div class="invalid-feedback" *ngIf="submitted && signUp.phone.errors?.required">
+                                        Enter your phone number.
+                                    </div>
+                                    <div class="invalid-feedback" *ngIf="submitted && signUp.phone.errors?.pattern">
+                                        Enter numbers only.
+                                    </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" formControlName="address"
+                                    placeholder="Address *" [ngClass]="{ 'is-invalid': submitted && signUp.address.errors }">
+                                    <div class="invalid-feedback" *ngIf="submitted && signUp.address.errors?.required">
+                                        Enter your address.
+                                    </div>
+                            </div>
+                            <div class="">
+                                <button class="btnRegister">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div> -->
+
+
+
+
+<div class="container-fluid page">
+    <div class="d-flex page__box p-3 mt-2">Register</div>
+    <div class="page__content shadow p-3 position-relative">
+        <div class="page__content-data">
+            <div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
+                        <h3>Welcome</h3>
+                        <p>You are 30 seconds away from earning your own money!</p>
+                        <input type="submit" name="" value="Login" [routerLink]="['/login']" /><br />
+                    </div>
+                    <div class="col-md-9 register-right">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">Apply as a Employee</h3>
+                                <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                                    <div class="row register-form">
+                                        <div class="form-group col-md-6">
+                                            <input type="text" class="form-control" formControlName="firstName"
+                                                placeholder="First Name *"
+                                                [ngClass]="{ 'is-invalid': submitted && signUp.firstName.errors }">
+                                            <div class="invalid-feedback" *ngIf="submitted && signUp.firstName.errors?.required">
+                                                firstName is required.
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <input type="text" class="form-control" formControlName="lastName"
+                                                placeholder="Last Name *"
+                                                [ngClass]="{ 'is-invalid': submitted && signUp.lastName.errors }">
+                                            <div class="invalid-feedback" *ngIf="submitted && signUp.lastName.errors?.required">
+                                                LastName is required.
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <input type="text" class="form-control" formControlName="email" placeholder="Email *"
+                                                [ngClass]="{ 'is-invalid': submitted && signUp.email.errors }">
+                                                <div class="invalid-feedback" *ngIf="submitted && signUp.email.errors?.required">
+                                                    Enter your email.
+                                                </div>
+                                                <div class="invalid-feedback" *ngIf="submitted && signUp.email.errors?.pattern">
+                                                    Enter valid email.
+                                                </div>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <input type="text" class="form-control" formControlName="password"
+                                                placeholder="Passward *" [ngClass]="{ 'is-invalid': submitted && signUp.password.errors }">
+                                                <div class="invalid-feedback" *ngIf="submitted && signUp.password.errors?.required">
+                                                    Enter your password.
+                                                </div>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <input type="text" class="form-control" formControlName="phone" placeholder="Phone *"
+                                                [ngClass]="{ 'is-invalid': submitted && signUp.phone.errors}">
+                                                <div class="invalid-feedback" *ngIf="submitted && signUp.phone.errors?.required">
+                                                    Enter your phone number.
+                                                </div>
+                                                <div class="invalid-feedback" *ngIf="submitted && signUp.phone.errors?.pattern">
+                                                    Enter numbers only.
+                                                </div>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <input type="text" class="form-control" formControlName="address"
+                                                placeholder="Address *" [ngClass]="{ 'is-invalid': submitted && signUp.address.errors }">
+                                                <div class="invalid-feedback" *ngIf="submitted && signUp.address.errors?.required">
+                                                    Enter your address.
+                                                </div>
+                                        </div>
+                                        <div class="">
+                                            <button class="btnRegister">Register</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</div>

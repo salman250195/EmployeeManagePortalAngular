@@ -1,0 +1,71 @@
+<!-- <div class="row">
+    <div class="col-md-4">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">fghjkl;</h5>
+                <a class="btn btn-success">dfghjkl</a>
+            </div>
+            <div class="card-footer">
+                dfghjkl
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">fghjkl;</h5>
+                <a class="btn btn-success">dfghjkl</a>
+            </div>
+            <div class="card-footer">
+                dfghjkl
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">fghjkl;</h5>
+                <a class="btn btn-success">dfghjkl</a>
+            </div>
+            <div class="card-footer">
+                dfghjkl
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<!-- <div class="row mt-5">
+    <div class="col-md-4 mb-3" *ngFor="let event of specialEvents.SpecialEvents">
+        <div class="card text-center">
+            <div class="card-body">
+                <h5 class="card-title">{{ event.name }}</h5>
+                <p class="card-text">{{ event.description }}</p>
+                <a href="" class="btn btn-success">Buy tickets</a>
+            </div>
+            <div class="card-footer text-muted">{{ event.date | date: 'shortDate' }}</div>
+        </div>
+    </div>
+</div> -->
+
+
+
+<div class="container-fluid page">
+    <div class="d-flex page__box p-3 mt-2">SpecialEvents</div>
+    <div class="page__content shadow p-3 position-relative">
+        <div class="page__content-data">
+            <div class="row mt-5">
+                <div class="col-md-4 mb-3" *ngFor="let event of specialEvents.SpecialEvents">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ event.name }}</h5>
+                            <p class="card-text">{{ event.description }}</p>
+                            <a href="" class="btn btn-success">Buy tickets</a>
+                        </div>
+                        <div class="card-footer text-muted">{{ event.date | date: 'shortDate' }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
